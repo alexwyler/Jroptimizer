@@ -89,7 +89,7 @@ public class SheetsApi {
 
     public static Spreadsheet getOrCreateSpreadsheet() throws IOException, GeneralSecurityException {
         Spreadsheet spreadsheet;
-        try (DB db = DBMaker.fileDB("data.db").make()) {
+        try (DB db = DBMaker.fileDB("data/data.db").make()) {
             ConcurrentMap<String, String> map           = db.hashMap("data", Serializer.STRING, Serializer.STRING).createOrOpen();
             String                        spreadsheetId = map.get("spreadsheetId");
             if (spreadsheetId == null) {

@@ -3,8 +3,12 @@ package raidbots;
 import com.alexwyler.jurl.Jurl;
 import raidbots.objects.*;
 import raidbots.objects.Character;
+import util.JacksonUtil;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.Callable;
 
 /**
  * Created by alexwyler on 2/13/19.
@@ -30,7 +34,7 @@ public class RaidBotsAPI {
                 .getResponseJsonObject(Character.class);
     }
 
-    public static SSimResponse droptimizerDazarAlor(String realm, String name) {
+    public static SSimResponse beginDroptimizer(String realm, String name) {
         Character character = fetch(realm, name);
         Items equipped = character.getItems();
         String spec = character.getTalents().get(0).getSpec().getName();
@@ -69,16 +73,39 @@ public class RaidBotsAPI {
         simRequest.setMysticTouch(true);
         simRequest.setMysticTouch(true);
         simRequest.setDroptimizer(droptimizer);
-
-        //"frontendHost":"www.raidbots.com",
-        //"frontendVersion":"aba583abfe41d91dd7e64bb825991109f477ccaf"
+        simRequest.setDroptimizer(droptimizer);
 
         Jurl jurl = getBaseJurl()
                 .url(String.format("https://www.raidbots.com/sim"))
                 .method("POST")
                 .bodyJson(simRequest);
+
+        System.out.println(jurl.toCurl());
         jurl.go();
         return jurl.getResponseJsonObject(SSimResponse.class);
+    }
+
+    public static List<String> selectBetterItems(String realm, String character) {
+        SSimResponse simResponse = beginDroptimizer(realm, character);
+        return selectBetterItems(simResponse.getSimId());
+    }
+
+    public static List<String> selectBetterItems(String simId) {
+        Callable<SSimData> callable = responsiblyWaitingCallable(simId);
+        List<String> betterItems = new ArrayList<>();
+        try {
+            SSimData data = callable.call();
+            System.out.println(JacksonUtil.writePretty(data));
+            double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
+            for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
+                if  (result.mean > preDPS) {
+                    betterItems.add(result.name);
+                }
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return betterItems;
     }
 
     public static SSimStatus checkSimStatus(String simId) {
@@ -89,13 +116,36 @@ public class RaidBotsAPI {
                 .getResponseJsonObject(SSimStatus.class);
     }
 
-//    public static SSimData loadCompletedSimData(String simId) {
-//        return getBaseJurl()
-//                .url(String.format("https://www.raidbots.com/reports/%s/data.json", simId))
-//                .method("GET")
-//                .go()
-//                .getResponseJsonObject()
-//    }
-//
-//    public static Callable<>
+    public static SSimData loadCompletedSimData(String simId) {
+        Jurl jurl = getBaseJurl()
+                .url(String.format("https://www.raidbots.com/reports/%s/data.json", simId))
+                .method("GET")
+                .go();
+
+        System.out.println(jurl.getResponseBody());
+        return jurl
+                .getResponseJsonObject(SSimData.class);
+    }
+
+    public static Callable<SSimData> responsiblyWaitingCallable(final String simId) {
+        return () -> {
+            while (true) {
+                SSimStatus sSimStatus = checkSimStatus(simId);
+                if ("complete".equals(sSimStatus.getJob().getState())) {
+                    break;
+                } else {
+                    System.out.println(simId);
+                    System.out.println(JacksonUtil.writePretty(sSimStatus.getQueue()));
+                    System.out.println(sSimStatus.getLog());
+                    Thread.sleep(30_000);
+                }
+            }
+            return loadCompletedSimData(simId);
+        };
+    }
+
+    public static void main(String args[]) {
+        System.out.println(selectBetterItems("Lightbringer", "Sunkin"));
+        //System.out.println(selectBetterItems("eZSapoc1QUWMRJWWqBQoWm"));
+    }
 }
