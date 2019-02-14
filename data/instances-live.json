@@ -1,0 +1,802 @@
+[
+  {
+    "id": 968,
+    "name": "Atal'Dazar",
+    "description": "For millennia, the Zandalari kings were laid to rest within the tombs of Atal'Dazar, secluded high atop the mountain Mugamba. These pyramids grew more elaborate with each passing ruler, as new rooms were constructed to house the deceased's vast wealth. Now, these once pristine halls have been corrupted by the Prophet Zul and his trusted lieutenant, Yazma, who seek to twist the power of these ancient kings for their own dark machinations.",
+    "image_button": "ui-ej-dungeonbutton-ataldazar",
+    "image_button_small": "lfgicon-ataldazar",
+    "image_background": "ui-ej-background-ataldazar",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2082,
+        "name": "Priestess Alun'za",
+        "icon": "ui-ej-boss-priestess_alunza",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2036,
+        "name": "Vol'kaal",
+        "icon": "ui-ej-boss-volkaal",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2083,
+        "name": "Rezan",
+        "icon": "ui-ej-boss-rezan",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2030,
+        "name": "Yazma",
+        "icon": "ui-ej-boss-yazma",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1001,
+    "name": "Freehold",
+    "description": "Freehold has traditionally served as a haven for pirates, scoundrels, and those who wish to live free of Kul Tiran control. Now, the Irontide Raiders have brought the city under their harsh rule and are coercing the various pirate crews under their banner. While the pirates gather, a small group of heroes must infiltrate the town and eliminate their leadership to dissolve this growing alliance of cutthroats.",
+    "image_button": "ui-ej-dungeonbutton-freehold",
+    "image_button_small": "lfgicon-freehold",
+    "image_background": "ui-ej-background-freehold",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2102,
+        "name": "Skycap'n Kragg",
+        "icon": "ui-ej-boss-skycapn_kragg",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2093,
+        "name": "Council o' Captains",
+        "icon": "ui-ej-boss-captain_eudora",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2094,
+        "name": "Ring of Booty",
+        "icon": "ui-ej-boss-sharkpuncher",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2095,
+        "name": "Harlan Sweete",
+        "icon": "ui-ej-boss-harlan_sweete",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1002,
+    "name": "Tol Dagor",
+    "description": "Once a highly maintained prison, Tol Dagor has since been purchased and run by the Ashvane Company. Now, it serves as indefinite holding for any who would oppose the Ashvane Trading Company.",
+    "image_button": "ui-ej-dungeonbutton-toldagor",
+    "image_button_small": "lfgicon-toldagor",
+    "image_background": "ui-ej-background-toldagor",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2097,
+        "name": "The Sand Queen",
+        "icon": "ui-ej-boss-thesandqueen",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2098,
+        "name": "Jes Howlis",
+        "icon": "ui-ej-boss-jeshowlis",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2099,
+        "name": "Knight Captain Valyri",
+        "icon": "ui-ej-boss-knightcaptainvalyri",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2096,
+        "name": "Overseer Korgus",
+        "icon": "ui-ej-boss-overseerkorgus",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1012,
+    "name": "The MOTHERLODE!!",
+    "description": "The Isle of Kezan, rent asunder by the eruption of Mount Kajaro, is now brimming with Azerite in the aftermath of Sargeras' assault on Azeroth. Seeking to make a fortune and stake his claim to the title of Trade Prince, Mogul Razdunk has focused the Venture Company's efforts on weaponizing Azerite and selling it to the highest bidder.",
+    "image_button": "ui-ej-dungeonbutton-themotherlode",
+    "image_button_small": "lfgicon-themotherlode",
+    "image_background": "ui-ej-background-themotherlode",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2109,
+        "name": "Coin-Operated Crowd Pummeler",
+        "icon": "ui-ej-boss-coinoperatedcrowdpummeler",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2114,
+        "name": "Azerokk",
+        "icon": "ui-ej-boss-azerokk",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2115,
+        "name": "Rixxa Fluxflame",
+        "icon": "ui-ej-boss-rixxafluxflame",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2116,
+        "name": "Mogul Razdunk",
+        "icon": "ui-ej-boss-mogulrazdunk",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1021,
+    "name": "Waycrest Manor",
+    "description": "Once the palatial estate of the Drustvar's ruling family, Waycrest Manor now serves as the focus of dark rumors since the Lord and Lady inexplicably locked themselves within its halls. Stories of foul rituals, people disappearing in the night, and horrible screams coming from within the home are common among the townsfolk. Amid all these whispers, only one thing is known, something evil has taken root within the Waycrest grounds.",
+    "image_button": "ui-ej-dungeonbutton-waycrestmanor",
+    "image_button_small": "lfgicon-waycrestmanor",
+    "image_background": "ui-ej-background-waycrestmanor",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2125,
+        "name": "Heartsbane Triad",
+        "icon": "ui-ej-boss-heartsbanetriad",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2126,
+        "name": "Soulbound Goliath",
+        "icon": "ui-ej-boss-soulboundgoliath",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2127,
+        "name": "Raal the Gluttonous",
+        "icon": "ui-ej-boss-raalthegluttonous",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2128,
+        "name": "Lord and Lady Waycrest",
+        "icon": "ui-ej-boss-lordandladywaycrest",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2129,
+        "name": "Gorak Tul",
+        "icon": "ui-ej-boss-goraktul",
+        "order": 5,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1022,
+    "name": "The Underrot",
+    "description": "Deep within the swamps of Nazmir, a blight grows beneath the surface. Unless this corruption is purged immediately, its influence will spread across the land like a ravenous plague, leaving behind nothing but a festering world.",
+    "image_button": "ui-ej-dungeonbutton-theunderrot",
+    "image_button_small": "lfgicon-theunderrot",
+    "image_background": "ui-ej-background-theunderrot",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2157,
+        "name": "Elder Leaxa",
+        "icon": "ui-ej-boss-elderleaxa",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2131,
+        "name": "Cragmaw the Infested",
+        "icon": "ui-ej-boss-cragmawtheinfested",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2130,
+        "name": "Sporecaller Zancha",
+        "icon": "ui-ej-boss-sporecallerzancha",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2158,
+        "name": "Unbound Abomination",
+        "icon": "ui-ej-boss-unboundabomination",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1023,
+    "name": "Siege of Boralus",
+    "description": "Lady Ashvane has unleashed her fury against the capital city's waning defenses. As Boralus burns, a small group of heroes must quell the rising chaos and put an end to Ashvane's plan to dominate the region.",
+    "image_button": "ui-ej-dungeonbutton-siegeofboralus",
+    "image_button_small": "lfgicon-siegeofboralus",
+    "image_background": "ui-ej-background-siegeofboralus",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2132,
+        "name": "Chopper Redhook",
+        "icon": "ui-ej-boss-chopperredhook",
+        "order": 1,
+        "faction": "alliance",
+        "flags": 4,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2133,
+        "name": "Sergeant Bainbridge",
+        "icon": "ui-ej-boss-sergeantbainbridge",
+        "order": 1,
+        "faction": "horde",
+        "flags": 8,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2173,
+        "name": "Dread Captain Lockwood",
+        "icon": "ui-ej-boss-dreadcaptainlockwood",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2134,
+        "name": "Hadal Darkfathom",
+        "icon": "ui-ej-boss-hadaldarkfathom",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2140,
+        "name": "Viq'Goth",
+        "icon": "ui-ej-boss-viqgoth",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1028,
+    "name": "Azeroth",
+    "description": "While many of the greatest threats to peace in Azeroth are locked away in ancient vaults or perched atop soaring fortresses, others walk brazenly beneath the open sky. As self-preservation drives the wise to seek shelter from these terrors, glory awaits any brave heroes who wish to test their mettle against the most powerful of foes.",
+    "image_button": "ui-ej-dungeonbutton-zandalar",
+    "image_button_small": "lfgicon-zandalar",
+    "image_background": "ui-ej-background-zandalar",
+    "order": 1,
+    "flags": 2,
+    "type_id": 2,
+    "type": "raid",
+    "encounters": [
+      {
+        "id": 2139,
+        "name": "T'zane",
+        "icon": "ui-ej-boss-tzane",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2141,
+        "name": "Ji'arak",
+        "icon": "ui-ej-boss-jiarak",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2197,
+        "name": "Hailstone Construct",
+        "icon": "ui-ej-boss-hailstoneconstruct",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2212,
+        "name": "The Lion's Roar",
+        "icon": "ui-ej-boss-thelionsroar",
+        "order": 1,
+        "faction": "horde",
+        "flags": 24,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2199,
+        "name": "Azurethos, The Winged Typhoon",
+        "icon": "ui-ej-boss-azurethosthewingedtyphoon",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2213,
+        "name": "Doom's Howl",
+        "icon": "ui-ej-boss-doomshowl",
+        "order": 2,
+        "faction": "alliance",
+        "flags": 20,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2198,
+        "name": "Warbringer Yenajz",
+        "icon": "ui-ej-boss-warbringeryenajz",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2210,
+        "name": "Dunegorger Kraulok",
+        "icon": "ui-ej-boss-dunegorgerkraulok",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2329,
+        "name": "Ivus the Forest Lord",
+        "icon": "ui-ej-boss-ivus-the-forest-lord",
+        "order": 11,
+        "faction": "horde",
+        "flags": 24,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2345,
+        "name": "Ivus the Decayed",
+        "icon": "ui-ej-boss-ivus-the-decayed",
+        "order": 12,
+        "faction": "alliance",
+        "flags": 20,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1030,
+    "name": "Temple of Sethraliss",
+    "description": "Centuries ago, Sethraliss, a powerful snake loa, sacrificed herself to stop Mythrax from unleashing his master upon Azeroth. After the battle, her devoted followers transported her remains and built a temple around them while they awaited her rebirth. Now, a dark force stirs within this sacred temple that seeks to twist her power towards nefarious ends.",
+    "image_button": "ui-ej-dungeonbutton-templeofsethraliss",
+    "image_button_small": "lfgicon-templeofsethraliss",
+    "image_background": "ui-ej-background-templeofsethraliss",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2142,
+        "name": "Adderis and Aspix",
+        "icon": "ui-ej-boss-adderisandaspix",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2143,
+        "name": "Merektha",
+        "icon": "ui-ej-boss-merektha",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2144,
+        "name": "Galvazzt",
+        "icon": "ui-ej-boss-galvazzt",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2145,
+        "name": "Avatar of Sethraliss",
+        "icon": "ui-ej-boss-avatarofsethraliss",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1031,
+    "name": "Uldir",
+    "description": "Millennia ago, seeking to understand the nature of their eternal foe, the titans constructed this sprawling underground facility to research and quarantine captured specimens. They hoped that by studying the void energy that bound the Old Gods, probing it for weaknesses and reactions, they could find some way to neutralize it. They were horribly, horribly wrong. The facility was sealed away, so that the horrors within would never be unleashed upon Azeroth. But now those seals have broken....",
+    "image_button": "ui-ej-dungeonbutton-uldir",
+    "image_button_small": "lfgicon-uldir",
+    "image_background": "ui-ej-background-uldir",
+    "order": 2,
+    "flags": 0,
+    "type_id": 2,
+    "type": "raid",
+    "encounters": [
+      {
+        "id": 2168,
+        "name": "Taloc",
+        "icon": "ui-ej-boss-taloc",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2167,
+        "name": "MOTHER",
+        "icon": "ui-ej-boss-mother",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2146,
+        "name": "Fetid Devourer",
+        "icon": "ui-ej-boss-fetiddevourer",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2169,
+        "name": "Zek'voz, Herald of N'zoth",
+        "icon": "ui-ej-boss-zekvozheraldofnzoth",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2166,
+        "name": "Vectis",
+        "icon": "ui-ej-boss-vectis",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2195,
+        "name": "Zul, Reborn",
+        "icon": "ui-ej-boss-zulreborn",
+        "order": 6,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2194,
+        "name": "Mythrax the Unraveler",
+        "icon": "ui-ej-boss-mythraxtheunraveler",
+        "order": 8,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2147,
+        "name": "G'huun",
+        "icon": "ui-ej-boss-ghuun",
+        "order": 11,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1036,
+    "name": "Shrine of the Storm",
+    "description": "The Shrine of the Storm is a seat of power for both House Stormsong and the tidesages alike. Here, blessings upon the fleet are performed to ensure that the Kul Tiran fleet knows no equals in combat. Yet, a dark force has corrupted these sacred ground and threatens to steal control of the Kul Tiran Fleet forever.",
+    "image_button": "ui-ej-dungeonbutton-shrineofthestorm",
+    "image_button_small": "lfgicon-shrineofthestorm",
+    "image_background": "ui-ej-background-shrineofthestorm",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2153,
+        "name": "Aqu'sirr",
+        "icon": "ui-ej-boss-aqusirr",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2154,
+        "name": "Tidesage Council",
+        "icon": "ui-ej-boss-tidesagecouncil",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2155,
+        "name": "Lord Stormsong",
+        "icon": "ui-ej-boss-lordstormsong",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2156,
+        "name": "Vol'zith the Whisperer",
+        "icon": "ui-ej-boss-volziththewhisperer",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1041,
+    "name": "Kings' Rest",
+    "description": "Few places in Zandalar are more sacred than Kings' Rest. Every king, conqueror, or tyrant who has held control of the Zandalari empire is housed within this great city of the dead to protect and honor not only their bodies, but also their spirits.\r\n\r\nEntry has historically been restricted solely to the Zandalari priesthood and royalty, but as Zul's dark magic winds its way through the tomb you must venture inside and put an end to the darkness that has found purchase there.",
+    "image_button": "ui-ej-dungeonbutton-kingsrest",
+    "image_button_small": "lfgicon-kingsrest",
+    "image_background": "ui-ej-background-kingsrest",
+    "order": 0,
+    "flags": 0,
+    "type_id": 1,
+    "type": "dungeon",
+    "encounters": [
+      {
+        "id": 2165,
+        "name": "The Golden Serpent",
+        "icon": "ui-ej-boss-thegoldenserpent",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2171,
+        "name": "Mchimba the Embalmer",
+        "icon": "ui-ej-boss-mchimbatheembalmer",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2170,
+        "name": "The Council of Tribes",
+        "icon": "ui-ej-boss-thecounciloftribes",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2172,
+        "name": "Dazar, The First King",
+        "icon": "ui-ej-boss-dazarthefirstking",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1176,
+    "name": "Battle of Dazar'alor",
+    "description": "For ages untold, Dazar'alor has stood at the center of the great and powerful Zandalari empire. Its guards have thwarted numerous attempts on King Rastakhan's life, and it has endured trials both ancient and new. But as war reaches the shores of Zuldazar, the Alliance embarks on a daring gambit to besiege the golden pyramid and sever the Zandalari's bond to the Horde.",
+    "image_button": "ui-ej-dungeonbutton-battleofdazaralor",
+    "image_button_small": "lfgicon-battleofdazaralor",
+    "image_background": "ui-ej-background-battleofdazaralor",
+    "order": 3,
+    "flags": 0,
+    "type_id": 2,
+    "type": "raid",
+    "encounters": [
+      {
+        "id": 2333,
+        "name": "Champion of the Light",
+        "icon": "ui-ej-boss-friday-ironbellows",
+        "order": 0,
+        "faction": "horde",
+        "flags": 8,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2344,
+        "name": "Champion of the Light",
+        "icon": "ui-ej-boss-rawani-kanae",
+        "order": 0,
+        "faction": "alliance",
+        "flags": 4,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2323,
+        "name": "Jadefire Masters",
+        "icon": "ui-ej-boss-mara-grimfang",
+        "order": 2,
+        "faction": "alliance",
+        "flags": 4,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2325,
+        "name": "Grong, the Jungle Lord",
+        "icon": "ui-ej-boss-king-grong",
+        "order": 2,
+        "faction": "horde",
+        "flags": 8,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2340,
+        "name": "Grong, the Revenant",
+        "icon": "ui-ej-boss-grong-the-revenant",
+        "order": 2,
+        "faction": "alliance",
+        "flags": 4,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2341,
+        "name": "Jadefire Masters",
+        "icon": "ui-ej-boss-manceroy-flamefist",
+        "order": 3,
+        "faction": "horde",
+        "flags": 8,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2342,
+        "name": "Opulence",
+        "icon": "ui-ej-boss-treasure-guardian",
+        "order": 3,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2330,
+        "name": "Conclave of the Chosen",
+        "icon": "ui-ej-boss-gonks-aspect",
+        "order": 4,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2335,
+        "name": "King Rastakhan",
+        "icon": "ui-ej-boss-king-rastakhan",
+        "order": 6,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2334,
+        "name": "High Tinker Mekkatorque",
+        "icon": "ui-ej-boss-mekkatorque",
+        "order": 7,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2337,
+        "name": "Stormwall Blockade",
+        "icon": "ui-ej-boss-laminaria",
+        "order": 8,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2343,
+        "name": "Lady Jaina Proudmoore",
+        "icon": "ui-ej-boss-lady-jaina-proudmoore",
+        "order": 9,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  },
+  {
+    "id": 1177,
+    "name": "Crucible of Storms",
+    "description": "A long-submerged evil stirs beneath the Shrine of the Storm. The whispers that drove Lord Stormsong to madness echo within the depths, a siren song of eldritch power. Those who listen and obey prepare dark rituals to carry out their master's will. Whatever nightmarish schemes fuel their fanatical devotion, one thing is certain: they must be stopped.",
+    "image_button": "ui-ej-dungeonbutton-crucibleofstorms",
+    "image_button_small": "lfgicon-crucibleofstorms",
+    "image_background": "ui-ej-background-crucibleofstorms",
+    "order": 4,
+    "flags": 0,
+    "type_id": 2,
+    "type": "raid",
+    "encounters": [
+      {
+        "id": 2328,
+        "name": "The Restless Cabal",
+        "icon": "ui-ej-boss-zaxasj-the-speaker",
+        "order": 1,
+        "flags": 0,
+        "difficulty_mask": 255
+      },
+      {
+        "id": 2332,
+        "name": "Uu'nat, Harbinger of the Void",
+        "icon": "ui-ej-boss-uunat",
+        "order": 2,
+        "flags": 0,
+        "difficulty_mask": 255
+      }
+    ]
+  }
+]
