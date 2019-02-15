@@ -140,20 +140,21 @@ public class RaidBotsAPI {
         return jurl.getResponseJsonObject(SSimResponse.class);
     }
 
-    public static List<String> selectBetterItems(String realm, String character) {
+    public static List<SItem> selectBetterItems(String realm, String character) {
         SSimResponse simResponse = beginDroptimizer(realm, character);
         return selectBetterItems(simResponse.getSimId());
     }
 
-    public static List<String> selectBetterItems(String simId) {
+    public static List<SItem> selectBetterItems(String simId) {
         Callable<SSimData> callable = responsiblyWaitingCallable(simId);
-        List<String> betterItems = new ArrayList<>();
+        List<SItem> betterItems = new ArrayList<>();
         try {
             SSimData data = callable.call();
             double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
             for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
                 if  (result.mean > preDPS) {
-                    betterItems.add(result.name);
+                    long itemId = Long.parseLong(result.name.split("/")[2]);
+                    betterItems.add(SItem.getItem(itemId));
                 }
             }
         } catch (Exception e) {
@@ -196,6 +197,8 @@ public class RaidBotsAPI {
     }
 
     public static void main(String args[]) throws IOException {
-        System.out.println(selectBetterItems("lightbringer", "Meds"));
+        for (SItem item : selectBetterItems("lightbringer", "Meds")) {
+            System.out.println(item.id + " " + item.name + " " + SInstance.getEncounter(item.sources.get(0).encounterId).name);
+        }
     }
 }

@@ -2,25 +2,8 @@ group 'alexwyler'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply plugin: 'java'
-apply plugin: 'nebula.lint'
 
 sourceCompatibility = 1.8
-
-buildscript {
-  repositories {
-    jcenter()
-  }
-
-  dependencies {
-    classpath 'com.github.ben-manes:gradle-versions-plugin:0.20.0'
-    classpath 'com.netflix.nebula:gradle-lint-plugin:latest.release'
-  }
-}
-
-allprojects {
-    gradleLint.rules += 'unused-dependency'
-}
 
 compileJava {
     sourceCompatibility = 1.8
@@ -30,12 +13,16 @@ compileJava {
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
+    compile name: 'forklabs-bnetconnector-20121209'
     compile 'com.intellij:annotations:12.0'
 
     compile 'commons-codec:commons-codec:1.11'
