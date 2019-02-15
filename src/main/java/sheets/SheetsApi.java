@@ -13,9 +13,7 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.Spreadsheet;
-import org.mapdb.DB;
-import org.mapdb.DBMaker;
-import org.mapdb.Serializer;
+import util.MapDB;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +22,7 @@ import java.io.InputStreamReader;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.ConcurrentMap;
+import java.util.Map;
 
 /**
  * Created by alexwyler on 2/14/19.
@@ -88,17 +86,15 @@ public class SheetsApi {
     }
 
     public static Spreadsheet getOrCreateSpreadsheet() throws IOException, GeneralSecurityException {
-        Spreadsheet spreadsheet;
-        try (DB db = DBMaker.fileDB("data/data.db").make()) {
-            ConcurrentMap<String, String> map           = db.hashMap("data", Serializer.STRING, Serializer.STRING).createOrOpen();
-            String                        spreadsheetId = map.get("spreadsheetId");
+        Map<String, String> dataMap = MapDB.getDataMap();
+        Spreadsheet         spreadsheet;
+            String                        spreadsheetId = dataMap.get("spreadsheetId");
             if (spreadsheetId == null) {
                 spreadsheet = createNewSpreadsheet();
-                map.put("spreadsheetId", spreadsheet.getSpreadsheetId());
+                dataMap.put("spreadsheetId", spreadsheet.getSpreadsheetId());
             } else {
                 spreadsheet = readFromExistingSheet(spreadsheetId);
             }
-        }
 
         return spreadsheet;
     }

@@ -1,0 +1,1417 @@
+{
+  "lastModified": 1550126615000,
+  "name": "Sunkin",
+  "realm": "Lightbringer",
+  "battlegroup": "Cyclone",
+  "class": 11,
+  "race": 4,
+  "gender": 0,
+  "level": 120,
+  "achievementPoints": 7485,
+  "thumbnail": "lightbringer/89/142334809-avatar.jpg",
+  "calcClass": "U",
+  "faction": 0,
+  "guild": {
+    "name": "Resident Kabuki Theatre",
+    "realm": "Lightbringer",
+    "battlegroup": "Cyclone",
+    "members": 933,
+    "achievementPoints": 2755,
+    "emblem": {
+      "icon": 66,
+      "iconColor": "ffb1b8b1",
+      "iconColorId": 14,
+      "border": 0,
+      "borderColor": "ff0f1415",
+      "borderColorId": 15,
+      "backgroundColor": "ff9e0036",
+      "backgroundColorId": 2
+    }
+  },
+  "items": {
+    "averageItemLevel": 405,
+    "averageItemLevelEquipped": 400,
+    "head": {
+      "id": 163596,
+      "name": "Cowl of Dark Portents",
+      "icon": "inv_leather_nazmirraidmythic_d_01helm",
+      "quality": 4,
+      "itemLevel": 390,
+      "tooltipParams": {
+        "transmogItem": 140901,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 73,
+          "amount": 655
+        },
+        {
+          "stat": 7,
+          "amount": 1189
+        }
+      ],
+      "armor": 262,
+      "context": "raid-mythic",
+      "bonusLists": [
+        4824,
+        1507,
+        4786,
+        5402
+      ],
+      "artifactId": 0,
+      "displayInfoId": 173304,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 140901,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": [
+          {
+            "id": 13,
+            "tier": 0,
+            "spellId": 263978,
+            "bonusListId": 0
+          },
+          {
+            "id": 467,
+            "tier": 1,
+            "spellId": 280013,
+            "bonusListId": 0
+          },
+          {
+            "id": 463,
+            "tier": 2,
+            "spellId": 267889,
+            "bonusListId": 0
+          },
+          {
+            "id": 362,
+            "tier": 3,
+            "spellId": 278515,
+            "bonusListId": 0
+          },
+          {
+            "id": 0,
+            "tier": 4,
+            "spellId": 0,
+            "bonusListId": 0
+          }
+        ]
+      },
+      "inventoryType": 1,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "neck": {
+      "id": 158075,
+      "name": "Heart of Azeroth",
+      "icon": "inv_heartofazeroth",
+      "quality": 6,
+      "itemLevel": 397,
+      "tooltipParams": {
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 32,
+          "amount": 259
+        },
+        {
+          "stat": 49,
+          "amount": 259
+        },
+        {
+          "stat": 36,
+          "amount": 259
+        },
+        {
+          "stat": 7,
+          "amount": 355
+        },
+        {
+          "stat": 71,
+          "amount": 207
+        }
+      ],
+      "armor": 0,
+      "context": "quest-reward",
+      "bonusLists": [
+        4936,
+        4929,
+        4930
+      ],
+      "artifactId": 0,
+      "displayInfoId": 0,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {},
+      "azeriteItem": {
+        "azeriteLevel": 37,
+        "azeriteExperience": 13910,
+        "azeriteExperienceRemaining": 22815
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 2,
+      "itemClass": 4,
+      "itemSubClass": 0
+    },
+    "shoulder": {
+      "id": 159323,
+      "name": "Shoulders of the Sanguine Monstrosity",
+      "icon": "inv_shoulder_leather_zandalardungeon_c_01",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "transmogItem": 138336,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 73,
+          "amount": 539
+        },
+        {
+          "stat": 7,
+          "amount": 1195
+        }
+      ],
+      "armor": 259,
+      "context": "challenge-mode-jackpot",
+      "bonusLists": [
+        5445,
+        1572,
+        4786,
+        5418
+      ],
+      "artifactId": 0,
+      "displayInfoId": 168640,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 138336,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": [
+          {
+            "id": 0,
+            "tier": 0,
+            "spellId": 0,
+            "bonusListId": 0
+          },
+          {
+            "id": 0,
+            "tier": 1,
+            "spellId": 0,
+            "bonusListId": 0
+          },
+          {
+            "id": 103,
+            "tier": 2,
+            "spellId": 267882,
+            "bonusListId": 0
+          },
+          {
+            "id": 172,
+            "tier": 3,
+            "spellId": 279778,
+            "bonusListId": 0
+          },
+          {
+            "id": 363,
+            "tier": 4,
+            "spellId": 278513,
+            "bonusListId": 0
+          }
+        ]
+      },
+      "inventoryType": 3,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "back": {
+      "id": 165512,
+      "name": "Loa Exultant's Shroud",
+      "icon": "inv_cape_mail_zuldazarraid_d_01",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "set": [
+          165512,
+          165567
+        ],
+        "transmogItem": 134111,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 32,
+          "amount": 66
+        },
+        {
+          "stat": 36,
+          "amount": 79
+        },
+        {
+          "stat": 71,
+          "amount": 212
+        },
+        {
+          "stat": 7,
+          "amount": 367
+        }
+      ],
+      "armor": 102,
+      "context": "raid-heroic",
+      "bonusLists": [
+        4799,
+        1522,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 177255,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 134111,
+        "itemAppearanceModId": 1,
+        "transmogItemAppearanceModId": 0
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 16,
+      "itemClass": 4,
+      "itemSubClass": 1
+    },
+    "chest": {
+      "id": 165515,
+      "name": "Grongpelt Vest",
+      "icon": "inv_chest_leather_zuldazarraid_d_01",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "transmogItem": 138324,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 73,
+          "amount": 718
+        },
+        {
+          "stat": 7,
+          "amount": 1593
+        }
+      ],
+      "armor": 346,
+      "context": "raid-heroic",
+      "bonusLists": [
+        4823,
+        1522,
+        4786,
+        5416
+      ],
+      "artifactId": 0,
+      "displayInfoId": 177095,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 138324,
+        "itemAppearanceModId": 1,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": [
+          {
+            "id": 0,
+            "tier": 0,
+            "spellId": 0,
+            "bonusListId": 0
+          },
+          {
+            "id": 0,
+            "tier": 1,
+            "spellId": 0,
+            "bonusListId": 0
+          },
+          {
+            "id": 103,
+            "tier": 2,
+            "spellId": 267882,
+            "bonusListId": 0
+          },
+          {
+            "id": 560,
+            "tier": 3,
+            "spellId": 288802,
+            "bonusListId": 0
+          },
+          {
+            "id": 120,
+            "tier": 4,
+            "spellId": 287251,
+            "bonusListId": 0
+          }
+        ]
+      },
+      "inventoryType": 5,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "wrist": {
+      "id": 160621,
+      "name": "Wristwraps of Coursing Miasma",
+      "icon": "inv_leather_nazmirraidmythic_d_01bracer",
+      "quality": 4,
+      "itemLevel": 385,
+      "tooltipParams": {
+        "gem0": 154127,
+        "transmogItem": 138219,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 32,
+          "amount": 83
+        },
+        {
+          "stat": 73,
+          "amount": 185
+        },
+        {
+          "stat": 36,
+          "amount": 54
+        },
+        {
+          "stat": 7,
+          "amount": 312
+        }
+      ],
+      "armor": 136,
+      "context": "raid-mythic",
+      "bonusLists": [
+        4800,
+        1808,
+        1507,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 172546,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 138219,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 9,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "hands": {
+      "id": 159346,
+      "name": "Grubby Servant-Grabbers",
+      "icon": "inv_glove_leather_kultirasdungeon_c_01",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "gem0": 154127,
+        "transmogItem": 139202,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 32,
+          "amount": 114
+        },
+        {
+          "stat": 73,
+          "amount": 283
+        },
+        {
+          "stat": 36,
+          "amount": 81
+        },
+        {
+          "stat": 7,
+          "amount": 488
+        }
+      ],
+      "armor": 216,
+      "context": "challenge-mode",
+      "bonusLists": [
+        5010,
+        4802,
+        1572,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 172565,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 139202,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 10,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "waist": {
+      "id": 159725,
+      "name": "Unscrupulous Geologist's Belt",
+      "icon": "inv_belt_leather_zandalardungeon_c_01",
+      "quality": 4,
+      "itemLevel": 410,
+      "tooltipParams": {
+        "transmogItem": 140858,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 32,
+          "amount": 118
+        },
+        {
+          "stat": 73,
+          "amount": 311
+        },
+        {
+          "stat": 49,
+          "amount": 84
+        },
+        {
+          "stat": 7,
+          "amount": 543
+        }
+      ],
+      "armor": 209,
+      "context": "challenge-mode-jackpot",
+      "bonusLists": [
+        5010,
+        1582,
+        4783
+      ],
+      "artifactId": 0,
+      "displayInfoId": 168631,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 140858,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 6,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "legs": {
+      "id": 165528,
+      "name": "Kelp-Laced Greaves",
+      "icon": "inv_pants_leather_zuldazarraid_d_01",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 32,
+          "amount": 119
+        },
+        {
+          "stat": 73,
+          "amount": 378
+        },
+        {
+          "stat": 36,
+          "amount": 141
+        },
+        {
+          "stat": 7,
+          "amount": 651
+        }
+      ],
+      "armor": 302,
+      "context": "raid-heroic",
+      "bonusLists": [
+        4799,
+        1522,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 177047,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 7,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "feet": {
+      "id": 165520,
+      "name": "Silent Pillager's Footpads",
+      "icon": "inv_boot_leather_zuldazarraidmythic_d_01",
+      "quality": 4,
+      "itemLevel": 415,
+      "tooltipParams": {
+        "gem0": 153709,
+        "transmogItem": 140861,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 40,
+          "amount": 85
+        },
+        {
+          "stat": 73,
+          "amount": 326
+        },
+        {
+          "stat": 49,
+          "amount": 121
+        },
+        {
+          "stat": 7,
+          "amount": 574
+        }
+      ],
+      "armor": 265,
+      "context": "raid-mythic",
+      "bonusLists": [
+        4800,
+        1808,
+        1537,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 177081,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 140861,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 1
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 8,
+      "itemClass": 4,
+      "itemSubClass": 2
+    },
+    "finger1": {
+      "id": 165567,
+      "name": "Seal of the Zandalari Empire",
+      "icon": "inv_ring_80_04a",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "enchant": 5943,
+        "set": [
+          165512,
+          165567
+        ],
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 36,
+          "amount": 255
+        },
+        {
+          "stat": 40,
+          "amount": 203
+        },
+        {
+          "stat": 7,
+          "amount": 367
+        }
+      ],
+      "armor": 0,
+      "context": "raid-heroic",
+      "bonusLists": [
+        4799,
+        1522,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 0,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "enchantDisplayInfoId": 5943
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 11,
+      "itemClass": 4,
+      "itemSubClass": 0
+    },
+    "finger2": {
+      "id": 159458,
+      "name": "Seal of the Regal Loa",
+      "icon": "inv_ring_80_03a",
+      "quality": 4,
+      "itemLevel": 400,
+      "tooltipParams": {
+        "enchant": 5943,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 40,
+          "amount": 280
+        },
+        {
+          "stat": 36,
+          "amount": 178
+        },
+        {
+          "stat": 7,
+          "amount": 367
+        }
+      ],
+      "armor": 0,
+      "context": "challenge-mode",
+      "bonusLists": [
+        5010,
+        1572,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 0,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "enchantDisplayInfoId": 5943
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 11,
+      "itemClass": 4,
+      "itemSubClass": 0
+    },
+    "trinket1": {
+      "id": 161472,
+      "name": "Lion's Grace",
+      "icon": "inv_mount_allianceliong",
+      "quality": 4,
+      "itemLevel": 370,
+      "tooltipParams": {
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 5,
+          "amount": 271
+        }
+      ],
+      "armor": 0,
+      "context": "raid-normal",
+      "bonusLists": [
+        5119,
+        1492,
+        4786
+      ],
+      "artifactId": 0,
+      "displayInfoId": 0,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {},
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 12,
+      "itemClass": 4,
+      "itemSubClass": 0
+    },
+    "trinket2": {
+      "id": 165928,
+      "name": "Eternal Alchemist Stone",
+      "icon": "inv_alchemist_81_eternalalchemiststone",
+      "quality": 4,
+      "itemLevel": 415,
+      "tooltipParams": {
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 40,
+          "amount": 197
+        }
+      ],
+      "armor": 0,
+      "context": "trade-skill",
+      "bonusLists": [],
+      "artifactId": 0,
+      "displayInfoId": 0,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {},
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 12,
+      "itemLimit": {
+        "category": 130,
+        "quantity": 1
+      },
+      "itemClass": 4,
+      "itemSubClass": 0
+    },
+    "mainHand": {
+      "id": 159133,
+      "name": "Jagged Iris Sica",
+      "icon": "inv_knife_1h_battledungeon_c_02",
+      "quality": 4,
+      "itemLevel": 410,
+      "tooltipParams": {
+        "enchant": 5963,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 40,
+          "amount": 53
+        },
+        {
+          "stat": 49,
+          "amount": 82
+        },
+        {
+          "stat": 5,
+          "amount": 207
+        },
+        {
+          "stat": 7,
+          "amount": 362
+        }
+      ],
+      "armor": 0,
+      "weaponInfo": {
+        "damage": {
+          "min": 159,
+          "max": 265,
+          "exactMin": 159,
+          "exactMax": 265
+        },
+        "weaponSpeed": 1.8,
+        "dps": 117.77778
+      },
+      "context": "challenge-mode-jackpot",
+      "bonusLists": [
+        5010,
+        1582,
+        4783
+      ],
+      "artifactId": 0,
+      "displayInfoId": 168688,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "enchantDisplayInfoId": 5963,
+        "itemAppearanceModId": 3
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 13,
+      "itemClass": 2,
+      "itemSubClass": 15
+    },
+    "offHand": {
+      "id": 165582,
+      "name": "Cursed Monkey Palm",
+      "icon": "inv_offhand_1h_zuldazarraid_d_02",
+      "quality": 4,
+      "itemLevel": 420,
+      "tooltipParams": {
+        "transmogItem": 117505,
+        "timewalkerLevel": 120,
+        "azeritePower0": 0,
+        "azeritePower1": 0,
+        "azeritePower2": 0,
+        "azeritePower3": 0,
+        "azeritePowerLevel": 0,
+        "azeritePower4": 0
+      },
+      "stats": [
+        {
+          "stat": 40,
+          "amount": 89
+        },
+        {
+          "stat": 36,
+          "amount": 69
+        },
+        {
+          "stat": 5,
+          "amount": 786
+        },
+        {
+          "stat": 7,
+          "amount": 453
+        },
+        {
+          "stat": 63,
+          "amount": 67
+        }
+      ],
+      "armor": 0,
+      "context": "raid-mythic",
+      "bonusLists": [
+        4800,
+        40,
+        1542,
+        4783
+      ],
+      "artifactId": 0,
+      "displayInfoId": 176166,
+      "artifactAppearanceId": 0,
+      "artifactTraits": [],
+      "relics": [],
+      "appearance": {
+        "itemId": 117505,
+        "itemAppearanceModId": 3,
+        "transmogItemAppearanceModId": 0
+      },
+      "azeriteItem": {
+        "azeriteLevel": 0,
+        "azeriteExperience": 0,
+        "azeriteExperienceRemaining": 0
+      },
+      "azeriteEmpoweredItem": {
+        "azeritePowers": []
+      },
+      "inventoryType": 23,
+      "itemClass": 4,
+      "itemSubClass": 0
+    }
+  },
+  "talents": [
+    {
+      "selected": true,
+      "talents": [
+        {
+          "tier": 3,
+          "column": 0,
+          "spell": {
+            "id": 5211,
+            "name": "Mighty Bash",
+            "icon": "ability_druid_bash",
+            "description": "Invokes the spirit of Ursoc to stun the target for 5 sec. Usable in all shapeshift forms.",
+            "range": "Melee Range",
+            "castTime": "Instant",
+            "cooldown": "50 sec cooldown"
+          }
+        },
+        {
+          "tier": 4,
+          "column": 2,
+          "spell": {
+            "id": 102560,
+            "name": "Incarnation: Chosen of Elune",
+            "subtext": "Talent, Shapeshift",
+            "icon": "spell_druid_incarnation",
+            "description": "An improved Moonkin Form that increases the damage of all your spells by 25% and grants you 15% Haste.\n\n\n\nLasts 30 sec. You may shapeshift in and out of this improved Moonkin Form for its duration.",
+            "castTime": "Instant",
+            "cooldown": "3 min cooldown"
+          }
+        },
+        {
+          "tier": 1,
+          "column": 1,
+          "spell": {
+            "id": 108238,
+            "name": "Renewal",
+            "icon": "spell_nature_natureblessing",
+            "description": "Instantly heals you for 30% of maximum health. Usable in all shapeshift forms.",
+            "castTime": "Instant",
+            "cooldown": "1.5 min cooldown"
+          }
+        },
+        {
+          "tier": 0,
+          "column": 0,
+          "spell": {
+            "id": 202430,
+            "name": "Nature's Balance",
+            "icon": "ability_druid_balanceofpower",
+            "description": "While in combat you generate 2 Astral Power every 3 sec.\n\n\n\nWhile out of combat your Astral Power rebalances to 50 instead of depleting to empty.",
+            "castTime": "Passive"
+          },
+          "spec": {
+            "name": "Balance",
+            "role": "DPS",
+            "backgroundImage": "bg-druid-balance",
+            "icon": "spell_nature_starfall",
+            "description": "Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 0
+          }
+        },
+        {
+          "tier": 6,
+          "column": 0,
+          "spell": {
+            "id": 202342,
+            "name": "Shooting Stars",
+            "icon": "spell_priest_divinestar_shadow2",
+            "description": "Moonfire and Sunfire damage over time has a chance to call down a falling star, dealing 1,409 Astral damage and generating 4 Astral Power.",
+            "castTime": "Passive"
+          },
+          "spec": {
+            "name": "Balance",
+            "role": "DPS",
+            "backgroundImage": "bg-druid-balance",
+            "icon": "spell_nature_starfall",
+            "description": "Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 0
+          }
+        },
+        {
+          "tier": 2,
+          "column": 1,
+          "spell": {
+            "id": 197491,
+            "name": "Guardian Affinity",
+            "icon": "talentspec_druid_feral_bear",
+            "description": "You gain:\n\n\n\nT134355:24 Thick Hide\n\nReduces all damage taken by 6%.\n\n\n\nYou also learn:\n\n\n\nT451161:24 Thrash\n\nT1378702:24 Ironfur\n\nT132091:24 Frenzied Regeneration",
+            "castTime": "Passive"
+          },
+          "spec": {
+            "name": "Balance",
+            "role": "DPS",
+            "backgroundImage": "bg-druid-balance",
+            "icon": "spell_nature_starfall",
+            "description": "Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 0
+          }
+        },
+        {
+          "tier": 5,
+          "column": 2,
+          "spell": {
+            "id": 202347,
+            "name": "Stellar Flare",
+            "icon": "ability_druid_stellarflare",
+            "description": "Burns the target for 489 Astral damage, and then an additional 4,394 damage over 24 sec.\n\n\n\nGenerates 8 Astral Power.",
+            "range": "40 yd range",
+            "castTime": "1.5 sec cast"
+          },
+          "spec": {
+            "name": "Balance",
+            "role": "DPS",
+            "backgroundImage": "bg-druid-balance",
+            "icon": "spell_nature_starfall",
+            "description": "Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 0
+          }
+        }
+      ],
+      "spec": {
+        "name": "Balance",
+        "role": "DPS",
+        "backgroundImage": "bg-druid-balance",
+        "icon": "spell_nature_starfall",
+        "description": "Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+        "order": 0
+      },
+      "calcTalent": "0110220",
+      "calcSpec": "a"
+    },
+    {
+      "talents": [
+        {
+          "tier": 3,
+          "column": 1,
+          "spell": {
+            "id": 102359,
+            "name": "Mass Entanglement",
+            "icon": "spell_druid_massentanglement",
+            "description": "Roots the target and all enemies within 15 yards in place for 30 sec. Damage may interrupt the effect. Usable in all shapeshift forms.",
+            "range": "30 yd range",
+            "castTime": "Instant",
+            "cooldown": "30 sec cooldown"
+          }
+        },
+        {
+          "tier": 1,
+          "column": 1,
+          "spell": {
+            "id": 108238,
+            "name": "Renewal",
+            "icon": "spell_nature_natureblessing",
+            "description": "Instantly heals you for 30% of maximum health. Usable in all shapeshift forms.",
+            "castTime": "Instant",
+            "cooldown": "1.5 min cooldown"
+          }
+        },
+        {
+          "tier": 2,
+          "column": 2,
+          "spell": {
+            "id": 197491,
+            "name": "Guardian Affinity",
+            "icon": "talentspec_druid_feral_bear",
+            "description": "You gain:\n\n\n\nT134355:24 Thick Hide\n\nReduces all damage taken by 6%.\n\n\n\nYou also learn:\n\n\n\nT451161:24 Thrash\n\nT1378702:24 Ironfur\n\nT132091:24 Frenzied Regeneration",
+            "castTime": "Passive"
+          },
+          "spec": {
+            "name": "Restoration",
+            "role": "HEALING",
+            "backgroundImage": "bg-druid-restoration",
+            "icon": "spell_nature_healingtouch",
+            "description": "Channels powerful Nature magic to regenerate and revitalize allies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 3
+          }
+        },
+        {
+          "tier": 4,
+          "column": 2,
+          "spell": {
+            "id": 33891,
+            "name": "Incarnation: Tree of Life",
+            "subtext": "Talent, Shapeshift",
+            "icon": "ability_druid_improvedtreeform",
+            "description": "Shapeshift into the Tree of Life, increasing healing done by 15%, increasing armor by 120%, and granting protection from Polymorph effects.  Functionality of Rejuvenation, Wild Growth, Regrowth, and Entangling Roots is enhanced.\n\n\n\nLasts 30 sec. You may shapeshift in and out of this form for its duration.",
+            "castTime": "Instant",
+            "cooldown": "3 min cooldown"
+          },
+          "spec": {
+            "name": "Restoration",
+            "role": "HEALING",
+            "backgroundImage": "bg-druid-restoration",
+            "icon": "spell_nature_healingtouch",
+            "description": "Channels powerful Nature magic to regenerate and revitalize allies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 3
+          }
+        },
+        {
+          "tier": 6,
+          "column": 2,
+          "spell": {
+            "id": 197721,
+            "name": "Flourish",
+            "icon": "spell_druid_wildburst",
+            "description": "Extends the duration of all of your heal over time effects on friendly targets within 60 yards by 8 sec, and increases the rate of your heal over time effects by 100% for 8 sec.",
+            "castTime": "Instant",
+            "cooldown": "1.5 min cooldown"
+          },
+          "spec": {
+            "name": "Restoration",
+            "role": "HEALING",
+            "backgroundImage": "bg-druid-restoration",
+            "icon": "spell_nature_healingtouch",
+            "description": "Channels powerful Nature magic to regenerate and revitalize allies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 3
+          }
+        },
+        {
+          "tier": 5,
+          "column": 0,
+          "spell": {
+            "id": 197073,
+            "name": "Inner Peace",
+            "icon": "ability_druid_dreamstate",
+            "description": "Reduces the cooldown of Tranquility by 60 sec.",
+            "castTime": "Passive"
+          },
+          "spec": {
+            "name": "Restoration",
+            "role": "HEALING",
+            "backgroundImage": "bg-druid-restoration",
+            "icon": "spell_nature_healingtouch",
+            "description": "Channels powerful Nature magic to regenerate and revitalize allies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 3
+          }
+        },
+        {
+          "tier": 0,
+          "column": 2,
+          "spell": {
+            "id": 102351,
+            "name": "Cenarion Ward",
+            "icon": "ability_druid_naturalperfection",
+            "description": "Protects a friendly target for 30 sec. Any damage taken will consume the ward and heal the target for 9,216 over 8 sec.",
+            "range": "40 yd range",
+            "powerCost": "9.19% of base mana",
+            "castTime": "Instant",
+            "cooldown": "30 sec cooldown"
+          },
+          "spec": {
+            "name": "Restoration",
+            "role": "HEALING",
+            "backgroundImage": "bg-druid-restoration",
+            "icon": "spell_nature_healingtouch",
+            "description": "Channels powerful Nature magic to regenerate and revitalize allies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+            "order": 3
+          }
+        }
+      ],
+      "spec": {
+        "name": "Restoration",
+        "role": "HEALING",
+        "backgroundImage": "bg-druid-restoration",
+        "icon": "spell_nature_healingtouch",
+        "description": "Channels powerful Nature magic to regenerate and revitalize allies.\r\n\r\nPreferred Weapon: Staff, Dagger, Mace",
+        "order": 3
+      },
+      "calcTalent": "2121202",
+      "calcSpec": "Y"
+    },
+    {
+      "talents": [],
+      "spec": {
+        "name": "Feral",
+        "role": "DPS",
+        "backgroundImage": "bg-druid-cat",
+        "icon": "ability_druid_catform",
+        "description": "Takes on the form of a great cat to deal damage with bleeds and bites.\r\n\r\nPreferred Weapon: Staff, Polearm",
+        "order": 1
+      },
+      "calcTalent": "",
+      "calcSpec": "Z"
+    },
+    {
+      "talents": [],
+      "spec": {
+        "name": "Guardian",
+        "role": "TANK",
+        "backgroundImage": "bg-druid-bear",
+        "icon": "ability_racial_bearform",
+        "description": "Takes on the form of a mighty bear to absorb damage and protect allies.\r\n\r\nPreferred Weapon: Staff, Polearm",
+        "order": 2
+      },
+      "calcTalent": "",
+      "calcSpec": "b"
+    },
+    {
+      "talents": [],
+      "calcTalent": "",
+      "calcSpec": ""
+    },
+    {
+      "talents": [],
+      "calcTalent": "",
+      "calcSpec": ""
+    },
+    {
+      "talents": [],
+      "calcTalent": "",
+      "calcSpec": ""
+    },
+    {
+      "talents": [],
+      "calcTalent": "",
+      "calcSpec": ""
+    },
+    {
+      "talents": [],
+      "calcTalent": "",
+      "calcSpec": ""
+    }
+  ],
+  "totalHonorableKills": 16405
+}

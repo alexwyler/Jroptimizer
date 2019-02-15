@@ -1,0 +1,37 @@
+{
+  "version": {
+    "version": "6ad761467699251b0cc5",
+    "updated": "2019-02-14T20:11:45.555Z"
+  },
+  "user": {
+    "created": "2018-08-18T21:41:18.409Z",
+    "stripe": {
+      "subscription": {},
+      "customer": {}
+    },
+    "email": "alex.s.wyler@gmail.com",
+    "discord": {
+      "id": "81426287939297280",
+      "locale": "en-US",
+      "flags": 0,
+      "refreshedAt": "2019-01-28T08:32:02.939Z",
+      "avatar": "12aaee94e44af27bb78b0dae3b42adf8",
+      "username": "Sunkin / Alex",
+      "discriminator": "0147",
+      "fetchedAt": "2018-12-20T09:06:35.195Z"
+    },
+    "patreonTitle": "Epic",
+    "username": "alexwyler",
+    "discordSearch": "sunkin / alex",
+    "guildReward": {
+      "guildId": "202552272687857665",
+      "roleId": "225774120271478796"
+    },
+    "key": "6248364690374656",
+    "patreonLinked": false,
+    "stripeLinked": true
+  },
+  "site": {
+    "slowMode": "0"
+  }
+}

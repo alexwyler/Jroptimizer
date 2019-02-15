@@ -1,0 +1,526 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "mask": 1,
+      "name": "Warrior",
+      "armorTypes": [
+        "misc",
+        "plate",
+        "shield"
+      ]
+    },
+    {
+      "id": 2,
+      "mask": 2,
+      "name": "Paladin",
+      "armorTypes": [
+        "misc",
+        "plate",
+        "shield"
+      ]
+    },
+    {
+      "id": 3,
+      "mask": 4,
+      "name": "Hunter",
+      "armorTypes": [
+        "misc",
+        "mail"
+      ]
+    },
+    {
+      "id": 4,
+      "mask": 8,
+      "name": "Rogue",
+      "armorTypes": [
+        "misc",
+        "leather"
+      ]
+    },
+    {
+      "id": 5,
+      "mask": 16,
+      "name": "Priest",
+      "armorTypes": [
+        "misc",
+        "cloth"
+      ]
+    },
+    {
+      "id": 6,
+      "mask": 32,
+      "name": "Death Knight",
+      "armorTypes": [
+        "misc",
+        "plate"
+      ]
+    },
+    {
+      "id": 7,
+      "mask": 64,
+      "name": "Shaman",
+      "armorTypes": [
+        "misc",
+        "mail",
+        "shield"
+      ]
+    },
+    {
+      "id": 8,
+      "mask": 128,
+      "name": "Mage",
+      "armorTypes": [
+        "misc",
+        "cloth"
+      ]
+    },
+    {
+      "id": 9,
+      "mask": 256,
+      "name": "Warlock",
+      "armorTypes": [
+        "misc",
+        "cloth"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": 512,
+      "name": "Monk",
+      "armorTypes": [
+        "misc",
+        "leather"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": 1024,
+      "name": "Druid",
+      "armorTypes": [
+        "misc",
+        "leather"
+      ]
+    },
+    {
+      "id": 12,
+      "mask": 2048,
+      "name": "Demon Hunter",
+      "armorTypes": [
+        "misc",
+        "leather"
+      ]
+    }
+  ],
+  "races": [
+    {
+      "id": 1,
+      "mask": 1,
+      "side": "alliance",
+      "name": "Human",
+      "simcName": "human"
+    },
+    {
+      "id": 2,
+      "mask": 2,
+      "side": "horde",
+      "name": "Orc",
+      "simcName": "orc"
+    },
+    {
+      "id": 3,
+      "mask": 4,
+      "side": "alliance",
+      "name": "Dwarf",
+      "simcName": "dwarf"
+    },
+    {
+      "id": 4,
+      "mask": 8,
+      "side": "alliance",
+      "name": "Night Elf",
+      "simcName": "night_elf"
+    },
+    {
+      "id": 5,
+      "mask": 16,
+      "side": "horde",
+      "name": "Undead",
+      "simcName": "undead"
+    },
+    {
+      "id": 6,
+      "mask": 32,
+      "side": "horde",
+      "name": "Tauren",
+      "simcName": "tauren"
+    },
+    {
+      "id": 7,
+      "mask": 64,
+      "side": "alliance",
+      "name": "Gnome",
+      "simcName": "gnome"
+    },
+    {
+      "id": 8,
+      "mask": 128,
+      "side": "horde",
+      "name": "Troll",
+      "simcName": "troll"
+    },
+    {
+      "id": 9,
+      "mask": 256,
+      "side": "horde",
+      "name": "Goblin",
+      "simcName": "goblin"
+    },
+    {
+      "id": 10,
+      "mask": 512,
+      "side": "horde",
+      "name": "Blood Elf",
+      "simcName": "blood_elf"
+    },
+    {
+      "id": 11,
+      "mask": 1024,
+      "side": "alliance",
+      "name": "Draenei",
+      "simcName": "draenei"
+    },
+    {
+      "id": 22,
+      "mask": 2097152,
+      "side": "alliance",
+      "name": "Worgen",
+      "simcName": "worgen"
+    },
+    {
+      "id": 24,
+      "mask": 8388608,
+      "side": "neutral",
+      "name": "Pandaren",
+      "simcName": "pandaren"
+    },
+    {
+      "id": 25,
+      "mask": 16777216,
+      "side": "alliance",
+      "name": "Pandaren",
+      "simcName": "pandaren_alliance"
+    },
+    {
+      "id": 26,
+      "mask": 33554432,
+      "side": "horde",
+      "name": "Pandaren",
+      "simcName": "pandaren_horde"
+    },
+    {
+      "id": 27,
+      "mask": 0,
+      "side": "horde",
+      "name": "Nightborne",
+      "simcName": "nightborne"
+    },
+    {
+      "id": 28,
+      "mask": 0,
+      "side": "horde",
+      "name": "Highmountain Tauren",
+      "simcName": "highmountaintauren"
+    },
+    {
+      "id": 29,
+      "mask": 0,
+      "side": "alliance",
+      "name": "Void Elf",
+      "simcName": "voidelf"
+    },
+    {
+      "id": 30,
+      "mask": 0,
+      "side": "alliance",
+      "name": "Lightforged Draenei",
+      "simcName": "lightforgeddraenei"
+    },
+    {
+      "id": 34,
+      "mask": 0,
+      "side": "alliance",
+      "name": "Dark Iron Dwarf",
+      "simcName": "darkirondward"
+    },
+    {
+      "id": 36,
+      "mask": 0,
+      "side": "horde",
+      "name": "Mag'har Orc",
+      "simcName": "magharorc"
+    }
+  ],
+  "roles": {
+    "attack": "DPS",
+    "healer": "HEALING",
+    "tank": "TANK"
+  },
+  "specInfo": {
+    "Death Knight": {
+      "blood": {
+        "id": 250,
+        "name": "Blood",
+        "role": "tank",
+        "mainStat": "str"
+      },
+      "frost": {
+        "id": 251,
+        "name": "Frost",
+        "dualWield": true,
+        "role": "melee",
+        "mainStat": "str"
+      },
+      "unholy": {
+        "id": 252,
+        "name": "Unholy",
+        "role": "melee",
+        "mainStat": "str"
+      },
+      "Demon Hunter": {
+        "havoc": {
+          "id": 577,
+          "name": "Havoc",
+          "role": "melee",
+          "dualWield": true,
+          "mainStat": "agi"
+        },
+        "vengeance": {
+          "id": 581,
+          "name": "Vengeance",
+          "role": "tank",
+          "dualWield": true,
+          "mainStat": "agi"
+        }
+      }
+    },
+    "Druid": {
+      "balance": {
+        "id": 102,
+        "name": "Balance",
+        "role": "caster",
+        "mainStat": "int"
+      },
+      "feral": {
+        "id": 103,
+        "name": "Feral",
+        "role": "melee",
+        "mainStat": "agi"
+      },
+      "guardian": {
+        "id": 104,
+        "name": "Guardian",
+        "role": "tank",
+        "mainStat": "agi"
+      },
+      "restoration": {
+        "id": 105,
+        "name": "Restoration",
+        "role": "healer",
+        "mainStat": "int"
+      }
+    },
+    "Hunter": {
+      "beast_mastery": {
+        "id": 253,
+        "name": "Beast Mastery",
+        "role": "ranged",
+        "mainHandOnly": true,
+        "mainStat": "agi"
+      },
+      "marksmanship": {
+        "id": 254,
+        "name": "Marksmanship",
+        "role": "ranged",
+        "mainHandOnly": true,
+        "mainStat": "agi"
+      },
+      "survival": {
+        "id": 255,
+        "name": "Survival",
+        "role": "melee",
+        "mainStat": "agi"
+      }
+    },
+    "Mage": {
+      "arcane": {
+        "id": 62,
+        "name": "Arcane",
+        "role": "caster",
+        "mainStat": "int"
+      },
+      "fire": {
+        "id": 63,
+        "name": "Fire",
+        "role": "caster",
+        "mainStat": "int"
+      },
+      "frost": {
+        "id": 64,
+        "name": "Frost",
+        "role": "caster",
+        "mainStat": "int"
+      }
+    },
+    "Monk": {
+      "brewmaster": {
+        "id": 268,
+        "name": "Brewmaster",
+        "role": "tank",
+        "mainStat": "agi"
+      },
+      "mistweaver": {
+        "id": 270,
+        "name": "Mistweaver",
+        "role": "healer",
+        "mainStat": "int"
+      },
+      "windwalker": {
+        "id": 269,
+        "name": "Windwalker",
+        "role": "melee",
+        "dualWield": true,
+        "extraStatScales": [
+          "stamina"
+        ],
+        "mainStat": "agi"
+      }
+    },
+    "Paladin": {
+      "holy": {
+        "id": 65,
+        "name": "Holy",
+        "role": "healer",
+        "mainStat": "int"
+      },
+      "protection": {
+        "id": 66,
+        "name": "Protection",
+        "role": "tank",
+        "mainStat": "str"
+      },
+      "retribution": {
+        "id": 70,
+        "name": "Retribution",
+        "role": "melee",
+        "mainStat": "str"
+      }
+    },
+    "Priest": {
+      "discipline": {
+        "id": 256,
+        "name": "Discipline",
+        "role": "healer",
+        "mainStat": "int"
+      },
+      "holy": {
+        "id": 257,
+        "name": "Holy",
+        "role": "healer",
+        "mainStat": "int"
+      },
+      "shadow": {
+        "id": 258,
+        "name": "Shadow",
+        "role": "caster",
+        "mainStat": "int"
+      }
+    },
+    "Rogue": {
+      "assassination": {
+        "id": 259,
+        "name": "Assassination",
+        "role": "melee",
+        "dualWield": true,
+        "mainStat": "agi"
+      },
+      "outlaw": {
+        "id": 260,
+        "name": "Outlaw",
+        "role": "melee",
+        "dualWield": true,
+        "mainStat": "agi"
+      },
+      "subtlety": {
+        "id": 261,
+        "name": "Subtlety",
+        "role": "melee",
+        "dualWield": true,
+        "mainStat": "agi"
+      }
+    },
+    "Shaman": {
+      "elemental": {
+        "id": 262,
+        "name": "Elemental",
+        "role": "caster",
+        "mainStat": "int"
+      },
+      "enhancement": {
+        "id": 263,
+        "name": "Enhancement",
+        "role": "melee",
+        "dualWield": true,
+        "mainStat": "agi"
+      },
+      "restoration": {
+        "id": 264,
+        "name": "Restoration",
+        "role": "healer",
+        "mainStat": "int"
+      }
+    },
+    "Warlock": {
+      "affliction": {
+        "id": 265,
+        "name": "Affliction",
+        "role": "caster",
+        "mainStat": "int"
+      },
+      "demonology": {
+        "id": 266,
+        "name": "Demonology",
+        "role": "caster",
+        "mainStat": "int"
+      },
+      "destruction": {
+        "id": 267,
+        "name": "Destruction",
+        "role": "caster",
+        "mainStat": "int"
+      }
+    },
+    "Warrior": {
+      "arms": {
+        "id": 71,
+        "name": "Arms",
+        "role": "melee",
+        "mainStat": "str"
+      },
+      "fury": {
+        "id": 72,
+        "name": "Fury",
+        "role": "melee",
+        "dualWield": true,
+        "dualWield2h": true,
+        "mainStat": "str"
+      },
+      "protection": {
+        "id": 73,
+        "name": "Protection",
+        "role": "tank",
+        "mainStat": "str"
+      }
+    }
+  }
+}

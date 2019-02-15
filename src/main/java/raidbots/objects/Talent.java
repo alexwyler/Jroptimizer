@@ -2,9 +2,7 @@ package raidbots.objects;
 
 import com.fasterxml.jackson.annotation.*;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -19,8 +17,6 @@ public class Talent {
 
     @JsonProperty("selected")
     private Boolean selected;
-    @JsonProperty("talents")
-    private List<Talent> talents = new ArrayList<Talent>();
     @JsonProperty("spec")
     private Spec   spec;
     @JsonProperty("calcTalent")
@@ -38,16 +34,6 @@ public class Talent {
     @JsonProperty("selected")
     public void setSelected(Boolean selected) {
         this.selected = selected;
-    }
-
-    @JsonProperty("talents")
-    public List<Talent> getTalents() {
-        return talents;
-    }
-
-    @JsonProperty("talents")
-    public void setTalents(List<Talent> talents) {
-        this.talents = talents;
     }
 
     @JsonProperty("spec")

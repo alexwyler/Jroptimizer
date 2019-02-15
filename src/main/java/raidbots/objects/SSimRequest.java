@@ -1,5 +1,6 @@
 package raidbots.objects;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -75,6 +76,7 @@ public class SSimRequest {
     private SimcItems simcItems;
     @JsonProperty("gearsets")
     private List<Object> gearsets = new ArrayList<Object>();
+    @JsonInclude(JsonInclude.Include.ALWAYS)
     @JsonProperty("talents")
     private Object talents;
     @JsonProperty("talentSets")
