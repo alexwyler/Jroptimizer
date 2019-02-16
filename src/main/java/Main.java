@@ -31,6 +31,7 @@ public class Main {
     public static void main(String args[]) throws IOException, ExecutionException, InterruptedException {
 
         String realm = "Lightbringer";
+
         SGuild guild = BattleNetApi.getGuildMembers(realm, "Resident Kabuki Theatre");
         List<SGuild.SMemberCharacter> raiders = guild.members.stream().filter(m -> {
             if (m.rank == 1) {

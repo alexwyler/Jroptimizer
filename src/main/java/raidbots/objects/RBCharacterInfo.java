@@ -42,7 +42,7 @@ public class RBCharacterInfo {
     }
 
     public static long specIdForName(String _class, String name) {
-        return info.specInfo.get(_class).get(StringUtils.lowerCase(name)).id;
+        return info.specInfo.get(_class).get(StringUtils.lowerCase(name).replaceAll("\\s", "_")).id;
     }
 
     public static String classNameForId(long id) {
