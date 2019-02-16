@@ -666,15 +666,6 @@
     "type": "raid",
     "encounters": [
       {
-        "id": 2333,
-        "name": "Champion of the Light",
-        "icon": "ui-ej-boss-friday-ironbellows",
-        "order": 0,
-        "faction": "horde",
-        "flags": 8,
-        "difficulty_mask": 255
-      },
-      {
         "id": 2344,
         "name": "Champion of the Light",
         "icon": "ui-ej-boss-rawani-kanae",
@@ -693,30 +684,12 @@
         "difficulty_mask": 255
       },
       {
-        "id": 2325,
-        "name": "Grong, the Jungle Lord",
-        "icon": "ui-ej-boss-king-grong",
-        "order": 2,
-        "faction": "horde",
-        "flags": 8,
-        "difficulty_mask": 255
-      },
-      {
         "id": 2340,
         "name": "Grong, the Revenant",
         "icon": "ui-ej-boss-grong-the-revenant",
         "order": 2,
         "faction": "alliance",
         "flags": 4,
-        "difficulty_mask": 255
-      },
-      {
-        "id": 2341,
-        "name": "Jadefire Masters",
-        "icon": "ui-ej-boss-manceroy-flamefist",
-        "order": 3,
-        "faction": "horde",
-        "flags": 8,
         "difficulty_mask": 255
       },
       {

@@ -3,8 +3,6 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.8
-
 compileJava {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
@@ -13,16 +11,12 @@ compileJava {
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
-    flatDir {
-        dirs 'libs'
-    }
 }
 
 dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
-    compile name: 'forklabs-bnetconnector-20121209'
     compile 'com.intellij:annotations:12.0'
 
     compile 'commons-codec:commons-codec:1.11'

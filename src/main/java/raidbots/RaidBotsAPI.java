@@ -196,7 +196,7 @@ public class RaidBotsAPI {
                     break;
                 } else {
                     System.out.println(simId + " - " + sSimStatus.getJob().getState() + " - " + sSimStatus.getJob().getProgress() + "%");
-                    Thread.sleep(3_000);
+                    Thread.sleep(30_000);
                 }
             }
             return loadCompletedSimData(simId);

@@ -35,6 +35,15 @@ public class SInstance {
         return null;
     }
 
+    public static SInstance getInstanceForName(String name) {
+        for (SInstance instance : instances) {
+            if (instance.name.equals(name)) {
+                return instance;
+            }
+        }
+        return null;
+    }
+
     public Long              id;
     public String            name;
     public String            type;

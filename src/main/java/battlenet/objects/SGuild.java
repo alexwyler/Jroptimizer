@@ -22,5 +22,6 @@ public class SGuild {
         public Long rank;
     }
 
+    public String name;
     public List<SMember> members;
 }

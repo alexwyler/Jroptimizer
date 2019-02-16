@@ -15,7 +15,6 @@ import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.Spreadsheet;
 import util.MapDB;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -28,14 +27,9 @@ import java.util.Map;
  * Created by alexwyler on 2/14/19.
  */
 public class SheetsApi {
-    private static final String      APPLICATION_NAME      = "Google Sheets API Java Quickstart";
+    private static final String      APPLICATION_NAME      = "RKT Droptimizer";
     private static final JsonFactory JSON_FACTORY          = JacksonFactory.getDefaultInstance();
     private static final String      TOKENS_DIRECTORY_PATH = "tokens";
-
-    /**
-     * Global instance of the scopes required by this quickstart.
-     * If modifying these scopes, delete your previously saved tokens/ folder.
-     */
     private static final List<String> SCOPES                = Collections.singletonList(SheetsScopes.SPREADSHEETS);
     private static final String       CREDENTIALS_FILE_PATH = "/sheets-credentials.json";
 
@@ -46,54 +40,59 @@ public class SheetsApi {
      * @return An authorized Credential object.
      * @throws IOException If the credentials.json file cannot be found.
      */
-    private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
-        System.out.println(new File(CREDENTIALS_FILE_PATH).getAbsolutePath());
+    private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) {
         // Load client secrets.
         InputStream in = SheetsApi.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
-        System.out.println(in);
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+        try {
+            GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
 
-        // Build flow and trigger user authorization request.
-        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
-                .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
-                .setAccessType("offline")
-                .build();
-        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
-        return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
+            // Build flow and trigger user authorization request.
+            GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
+                    HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
+                    .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
+                    .setAccessType("offline")
+                    .build();
+            LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
+            return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static Spreadsheet createNewSpreadsheet() throws IOException, GeneralSecurityException {
-
-        // Build a new authorized API client service.
-        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-
-        // TODO: Assign values to desired fields of `requestBody`:
         Spreadsheet requestBody = new Spreadsheet();
-
-        Sheets sheetsService = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
-                .setApplicationName(APPLICATION_NAME)
-                .build();
-
-        Sheets.Spreadsheets.Create request = sheetsService.spreadsheets().create(requestBody);
+        Sheets.Spreadsheets.Create request = getService().spreadsheets().create(requestBody);
 
         return request.execute();
     }
 
+    public static Sheets getService() {
+        final NetHttpTransport HTTP_TRANSPORT;
+        try {
+            HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        } catch (GeneralSecurityException | IOException e) {
+            throw new RuntimeException(e);
+        }
 
-    public static void main(String... args) throws IOException, GeneralSecurityException {
-        Spreadsheet spreadsheet = getOrCreateSpreadsheet();
+        Sheets sheetsService = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+        return  sheetsService;
     }
 
-    public static Spreadsheet getOrCreateSpreadsheet() throws IOException, GeneralSecurityException {
+    public static Spreadsheet getOrCreateSpreadsheetFromDB() {
         Map<String, String> dataMap = MapDB.getDataMap();
         Spreadsheet         spreadsheet;
             String                        spreadsheetId = dataMap.get("spreadsheetId");
-            if (spreadsheetId == null) {
-                spreadsheet = createNewSpreadsheet();
-                dataMap.put("spreadsheetId", spreadsheet.getSpreadsheetId());
-            } else {
-                spreadsheet = readFromExistingSheet(spreadsheetId);
+            try {
+                if (spreadsheetId == null) {
+                    spreadsheet = createNewSpreadsheet();
+                    dataMap.put("spreadsheetId", spreadsheet.getSpreadsheetId());
+                } else {
+                    spreadsheet = readFromExistingSheet(spreadsheetId);
+                }
+            } catch (IOException | GeneralSecurityException e) {
+                throw new RuntimeException(e);
             }
 
         return spreadsheet;
