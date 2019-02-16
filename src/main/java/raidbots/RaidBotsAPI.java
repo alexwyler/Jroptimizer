@@ -1,12 +1,12 @@
 package raidbots;
 
 import com.alexwyler.jurl.Jurl;
+import com.alexwyler.jurl.JurlHttpStatusCodeException;
 import org.apache.commons.lang3.StringUtils;
 import raidbots.objects.*;
 import raidbots.objects.Character;
 import util.CachedValue;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.Callable;
 
@@ -43,7 +43,7 @@ public class RaidBotsAPI {
         String raidBotsPassword = System.getenv("RAIDBOTS_PASSWORD");
         if (raidbotsEmail != null && raidBotsPassword != null) {
             loginRequest.put("email", raidbotsEmail);
-            loginRequest.put("password", raidBotsPassword);
+            loginRequest.put("password", raidBotsPassword.trim());
 
             Jurl jurl = getBaseJurl()
                     .url("https://www.raidbots.com/api/login")
@@ -135,32 +135,39 @@ public class RaidBotsAPI {
                 .url(String.format("https://www.raidbots.com/sim"))
                 .method("POST")
                 .bodyJson(simRequest);
-
-        jurl.go();
+        try {
+            jurl.go();
+        } catch (JurlHttpStatusCodeException e) {
+            System.out.println(e.getJurlInstance().getResponseBody());
+        }
         return jurl.getResponseJsonObject(SSimResponse.class);
     }
 
-    public static List<SItem> selectBetterItems(String realm, String character) {
+    public static Callable<List<SItem>> selectBetterItemsCallable(String realm, String character) {
+        System.out.println(String.format("Running droptimizer for %s-%s", character, realm));
         SSimResponse simResponse = beginDroptimizer(realm, character);
-        return selectBetterItems(simResponse.getSimId());
+        return selectBetterItemsCallable(simResponse.getSimId());
     }
 
-    public static List<SItem> selectBetterItems(String simId) {
-        Callable<SSimData> callable = responsiblyWaitingCallable(simId);
-        List<SItem> betterItems = new ArrayList<>();
-        try {
-            SSimData data = callable.call();
-            double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
-            for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
-                if  (result.mean > preDPS) {
-                    long itemId = Long.parseLong(result.name.split("/")[2]);
-                    betterItems.add(SItem.getItem(itemId));
+    public static Callable<List<SItem>> selectBetterItemsCallable(String simId) {
+        return () -> {
+            Callable<SSimData> callable = responsiblyWaitingCallable(simId);
+            List<SItem> betterItems = new ArrayList<>();
+            try {
+                SSimData data = callable.call();
+                double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
+                for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
+                    if  (result.mean > preDPS) {
+                        long itemId = Long.parseLong(result.name.split("/")[2]);
+                        betterItems.add(SItem.getItem(itemId));
+                    }
                 }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        return betterItems;
+            return betterItems;
+        };
+
     }
 
     public static SSimStatus checkSimStatus(String simId) {
@@ -196,8 +203,8 @@ public class RaidBotsAPI {
         };
     }
 
-    public static void main(String args[]) throws IOException {
-        for (SItem item : selectBetterItems("lightbringer", "Meds")) {
+    public static void main(String args[]) throws Exception {
+        for (SItem item : selectBetterItemsCallable("lightbringer", "Meds").call()) {
             System.out.println(item.id + " " + item.name + " " + SInstance.getEncounter(item.sources.get(0).encounterId).name);
         }
     }

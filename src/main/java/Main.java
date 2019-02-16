@@ -1,28 +1,43 @@
-import ca.forklabs.wow.net.AuthenticatedBNetConnection;
-import ca.forklabs.wow.net.BNetConnection;
-import ca.forklabs.wow.net.Region;
-import ca.forklabs.wow.net.WoWAPI;
+import battlenet.BattleNetApi;
+import battlenet.objects.SGuild;
+import raidbots.RaidBotsAPI;
+import raidbots.objects.SInstance;
+import raidbots.objects.SItem;
 
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.stream.Collectors;
 
 /**
  * Created by alexwyler on 2/15/19.
  */
 public class Main {
 
-    public static void main(String args[]) throws IOException {
-        String public_key = "public_key"; // your own public key here
-        String private_key = "private_key"; // your own private key here
-        BNetConnection connection = new AuthenticatedBNetConnection(public_key, private_key);
+    public static void main(String args[]) throws IOException, ExecutionException, InterruptedException {
 
-        WoWAPI api = new WoWAPI();
-        api.setBNetConnection(connection);
+        SGuild guild = BattleNetApi.getGuildMembers("Lightbringer", "Resident Kabuki Theatre");
+        List<SGuild.SMemberCharacter> raiders = guild.members.stream().filter(m -> Arrays.asList(0l, 1l, 4l).contains(m.rank) && m.character.level == 120l).map(m -> m.character).collect(Collectors.toList());
 
-        Region region = Region.Americas;
-        String realm = "Skullcrusher";
-        String name = "Oscassey";
-        WoWAPI.Answer answer = api.getCharacter(region, realm, name);
+        raiders = new ArrayList<>(raiders.subList(0, 3));
+        ExecutorService                 service  = Executors.newFixedThreadPool(8);
+        Map<String, Future<List<SItem>>> upgradeFutures = new HashMap<>();
+        for (SGuild.SMemberCharacter raider : raiders) {
+            upgradeFutures.put(raider.name, service.submit(RaidBotsAPI.selectBetterItemsCallable("Lightbringer", raider.name)));
+        }
 
-        System.out.println("HTTP code: " + answer.code); System.out.println(answer.json);
+        for (String raider : upgradeFutures.keySet()) {
+            List<SItem> upgrades = upgradeFutures.get(raider).get();
+            System.out.println(raider + ":");
+            for (SItem upgrade : upgrades) {
+                System.out.println(upgrade.name + " - " + SInstance.getEncounter(upgrade.sources.get(0).encounterId).name);
+            }
+            System.out.println("");
+        }
+
+
     }
 }
