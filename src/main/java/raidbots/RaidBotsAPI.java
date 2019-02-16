@@ -1,12 +1,10 @@
 package raidbots;
 
 import com.alexwyler.jurl.Jurl;
-import com.alexwyler.jurl.JurlHttpStatusCodeException;
 import org.apache.commons.lang3.StringUtils;
 import raidbots.objects.*;
 import raidbots.objects.Character;
 import util.CachedValue;
-import util.JacksonUtil;
 
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -136,29 +134,24 @@ public class RaidBotsAPI {
                 .url(String.format("https://www.raidbots.com/sim"))
                 .method("POST")
                 .bodyJson(simRequest);
-        try {
-            jurl.go();
-        } catch (JurlHttpStatusCodeException e) {
-            System.out.println(e.getJurlInstance().getResponseBody());
-        }
+        jurl.go();
         return jurl.getResponseJsonObject(SSimResponse.class);
     }
 
     public static Callable<List<SItem>> selectBetterItemsCallable(String realm, String character) {
         return () -> {
-            System.out.println(String.format("Running droptimizer for %s-%s", character, realm));
+            System.out.println(String.format("Running Raidbots' Droptimizer for %s-%s...", character, realm));
             SSimResponse simResponse = beginDroptimizer(realm, character);
-            return selectBetterItemsCallable(simResponse.getSimId()).call();
+            return selectBetterItemsFromSimCallable(simResponse.getSimId(), character).call();
         };
     }
 
-    public static Callable<List<SItem>> selectBetterItemsCallable(String simId) {
+    private static Callable<List<SItem>> selectBetterItemsFromSimCallable(String simId, String name) {
         return () -> {
-            Callable<SSimData> callable = responsiblyWaitingCallable(simId);
+            Callable<SSimData> callable = responsiblyWaitingCallable(simId, name);
             List<SItem> betterItems = new ArrayList<>();
             try {
                 SSimData data = callable.call();
-                System.out.println(JacksonUtil.writePretty(data));
                 if (data != null && data.sim != null && data.sim.players != null && !data.sim.players.isEmpty()) {
                     double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
                     for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
@@ -194,24 +187,23 @@ public class RaidBotsAPI {
                 .getResponseJsonObject(SSimData.class);
     }
 
-    public static Callable<SSimData> responsiblyWaitingCallable(final String simId) {
+    private static final String SIM_STATUS_OUTPUT_FORMAT = "%-8.12s [%-22.22s] - %-8.8s(%-2.3s)\n";
+
+    public static Callable<SSimData> responsiblyWaitingCallable(final String simId, String name) {
         return () -> {
             while (true) {
                 SSimStatus sSimStatus = checkSimStatus(simId);
                 if ("complete".equals(sSimStatus.getJob().getState())) {
                     break;
                 } else {
-                    System.out.println(simId + " - " + sSimStatus.getJob().getState() + " - " + sSimStatus.getJob().getProgress() + "%");
-                    Thread.sleep(30_000);
+                    long progress = sSimStatus.getJob().getProgress();
+                    System.out.printf(SIM_STATUS_OUTPUT_FORMAT, name, simId, sSimStatus.getJob().getState(), progress + "%");
+                    long sleep = ((100 - progress) / 100) * 45_000 + 4_000;
+                    Thread.sleep(sleep);
                 }
             }
             return loadCompletedSimData(simId);
         };
     }
 
-    public static void main(String args[]) throws Exception {
-        for (SItem item : selectBetterItemsCallable("lightbringer", "Meds").call()) {
-            System.out.println(item.id + " " + item.name + " " + SInstance.getEncounter(item.sources.get(0).encounterId).name);
-        }
-    }
 }
