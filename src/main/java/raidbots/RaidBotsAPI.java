@@ -159,11 +159,13 @@ public class RaidBotsAPI {
             try {
                 SSimData data = callable.call();
                 System.out.println(JacksonUtil.writePretty(data));
-                double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
-                for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
-                    if  (result.mean > preDPS) {
-                        long itemId = Long.parseLong(result.name.split("/")[2]);
-                        betterItems.add(SItem.getItem(itemId));
+                if (data != null && data.sim != null && data.sim.players != null && !data.sim.players.isEmpty()) {
+                    double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
+                    for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
+                        if (result.mean > preDPS) {
+                            long itemId = Long.parseLong(result.name.split("/")[2]);
+                            betterItems.add(SItem.getItem(itemId));
+                        }
                     }
                 }
             } catch (Exception e) {

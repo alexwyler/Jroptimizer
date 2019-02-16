@@ -196,9 +196,7 @@ public class Main {
         batchReq.setRequests(requests);
         SheetsApi.getService().spreadsheets().batchUpdate(spreadsheet.getSpreadsheetId(), batchReq)
                 .execute();
-
-        raiders = raiders.subList(0, 8);
-
+        
         ExecutorService                  service        = Executors.newFixedThreadPool(4);
         Map<String, Future<List<SItem>>> upgradeFutures = new HashMap<>();
         for (SGuild.SMemberCharacter raider : raiders) {
