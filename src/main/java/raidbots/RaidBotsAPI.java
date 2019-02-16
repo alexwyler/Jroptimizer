@@ -6,6 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import raidbots.objects.*;
 import raidbots.objects.Character;
 import util.CachedValue;
+import util.JacksonUtil;
 
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -144,9 +145,11 @@ public class RaidBotsAPI {
     }
 
     public static Callable<List<SItem>> selectBetterItemsCallable(String realm, String character) {
-        System.out.println(String.format("Running droptimizer for %s-%s", character, realm));
-        SSimResponse simResponse = beginDroptimizer(realm, character);
-        return selectBetterItemsCallable(simResponse.getSimId());
+        return () -> {
+            System.out.println(String.format("Running droptimizer for %s-%s", character, realm));
+            SSimResponse simResponse = beginDroptimizer(realm, character);
+            return selectBetterItemsCallable(simResponse.getSimId()).call();
+        };
     }
 
     public static Callable<List<SItem>> selectBetterItemsCallable(String simId) {
@@ -155,6 +158,7 @@ public class RaidBotsAPI {
             List<SItem> betterItems = new ArrayList<>();
             try {
                 SSimData data = callable.call();
+                System.out.println(JacksonUtil.writePretty(data));
                 double preDPS = data.sim.players.get(0).collected_data.dpse.mean;
                 for (SSimData.SProfileSetResult result : data.sim.profilesets.results) {
                     if  (result.mean > preDPS) {

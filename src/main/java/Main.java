@@ -197,7 +197,8 @@ public class Main {
         SheetsApi.getService().spreadsheets().batchUpdate(spreadsheet.getSpreadsheetId(), batchReq)
                 .execute();
 
-        raiders = raiders.subList(0, 2);
+        raiders = raiders.subList(0, 8);
+
         ExecutorService                  service        = Executors.newFixedThreadPool(4);
         Map<String, Future<List<SItem>>> upgradeFutures = new HashMap<>();
         for (SGuild.SMemberCharacter raider : raiders) {
@@ -205,6 +206,7 @@ public class Main {
         }
 
         List<List<Object>> upgradeCells = new ArrayList<>();
+        System.out.println("WAITING FOR " + upgradeFutures.size() + " RAIDERS' DROPTIMIZERS");
         for (String raider : upgradeFutures.keySet()) {
             List<SItem> upgrades = upgradeFutures.get(raider).get();
             System.out.println(raider + ":");
@@ -213,7 +215,7 @@ public class Main {
             upgradeRow.add(raider);
             Map<Long, List<SItem>> encounterToUpgrade = new HashMap<>();
             for (SItem upgrade : upgrades) {
-                SInstance.SEncounter encounter = SInstance.getEncounter(upgrade.sources.get(0).encounterId);
+                SInstance.SEncounter encounter = SInstance.getEncounter(upgrade);
                 List<SItem> existingUpgrades = encounterToUpgrade.getOrDefault(encounter.id, new ArrayList<>());
                 existingUpgrades.add(upgrade);
                 encounterToUpgrade.put(encounter.id, existingUpgrades);
@@ -230,13 +232,15 @@ public class Main {
                     upgradeRow.add(2);
                 }
             }
+            upgradeCells.add(upgradeRow);
         }
 
         ValueRange upgradeRange = new ValueRange().setValues(upgradeCells);
-        SheetsApi.getService().spreadsheets().values().update(spreadsheet.getSpreadsheetId(),"A2:Z10", upgradeRange)
+
+        SheetsApi.getService().spreadsheets().values().update(spreadsheet.getSpreadsheetId(),"A2:J" + raiders.size() + 1, upgradeRange)
                 .setValueInputOption("USER_ENTERED")
                 .execute();
 
-
+        System.out.println("DONE");
     }
 }

@@ -35,6 +35,16 @@ public class SInstance {
         return null;
     }
 
+    public static SEncounter getEncounter(SItem item) {
+        for (SItem.SItemSource source : item.sources) {
+            SEncounter encounter = getEncounter(source.encounterId);
+            if (encounter != null) {
+                return encounter;
+            }
+        }
+        return null;
+    }
+
     public static SInstance getInstanceForName(String name) {
         for (SInstance instance : instances) {
             if (instance.name.equals(name)) {
